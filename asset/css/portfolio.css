@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    animation: transitionIn 1.25s;
+}
+
+.logo img {
+    height: 50px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00ff00;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX('0');
+    }
+}

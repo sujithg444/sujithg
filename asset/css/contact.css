@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    animation: transitionIn 1.25s;
+}
+
+.logo img {
+    height: 50px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #00ff00;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX('0');
+    }
+}
+
+.contact-container {
+    display: flex;
+    max-width: 90%;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    text-align: left;
+    animation: transitionIn 1.25s;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 37px;
+    font-size: 23px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+input, select, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+}
+
+input, select, textarea {
+    background-color: #333;
+    color: #FFF;
+    border: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #00ff00;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #76ff03;
+    box-shadow: 0 0 20px #b2ff59;
+}
+
+.why-choose-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.image-containercm {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.image-containercm img {
+    border-radius: 50px;
+    max-width: 100%;
+    padding-right: 150px;
+    padding-left: 100px;
+    height: auto;
+}
+
+.content {
+    flex: 2;
+    padding-left: 0px;
+    padding-right: 50px;
+}
+
+.content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    border: 2px solid #b2ff59;
+    box-shadow: 0 0 20px #b2ff59;
+}
+
+.icon {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.icon svg {
+    width: 50px;
+    margin-top: 15px;
+    height: auto;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #b2ff59;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+.image-containerct {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.image-containerct img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 370px;
+}
+
+.contentct {
+    flex: 2;
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contentct h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contentct p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00ff00;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    line-height: 13px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #76ff03;
+    box-shadow: 0 0 20px #b2ff59;
+}
